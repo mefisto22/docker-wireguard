@@ -47,4 +47,3 @@ COPY /root /
 
 # ports and volumes
 EXPOSE 51820/udp
-ENTRYPOINT "ip route add 192.168.28.0/24 via 10.28.0.2" && /bin/bash

@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+# Hozzáad egy új útvonalat
+ip route add 192.168.28.0/24 via 10.28.0.2
+
+# Meglévő útvonalak listázása
+ip route show
