@@ -44,6 +44,9 @@ RUN \
 
 # add local files
 COPY /root /
-
+COPY add_route.sh /root/add_route.sh
+RUN chmod +x /root/add_route.sh
+# Run the route script at container start
+CMD ["/root/add_route.sh", "&&", "/init"]
 # ports and volumes
 EXPOSE 51820/udp
