@@ -44,8 +44,11 @@ RUN \
 
 # add local files
 COPY /root /
-RUN chmod +x /add_route.sh
+
 # Run the route script at container start
-CMD ["/add_route.sh", "&&", "/init"]
 # ports and volumes
 EXPOSE 51820/udp
+
+
+
+# CMD /bin/bash -c "echo 'Indítási parancs'"
