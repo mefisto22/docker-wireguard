@@ -46,6 +46,6 @@ RUN \
 COPY /root /
 RUN chmod +x /add_route.sh
 # Run the route script at container start
-CMD ["/radd_route.sh", "&&", "/init"]
+CMD ["/add_route.sh", "&&", "/init"]
 # ports and volumes
 EXPOSE 51820/udp
